@@ -2,6 +2,8 @@
 
 A local desktop application for viewing OpenTelemetry traces and spans during development. Built with Electron, React, and TypeScript.
 
+![Softo OTEL Viewer](resources/screenshot.png)
+
 ## Features
 
 - **HTTP OTLP receiver** on port `4318` (`/v1/traces`)
