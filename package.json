@@ -1,0 +1,54 @@
+{
+  "name": "softo-otel-viewer",
+  "version": "1.0.0",
+  "description": "Local OpenTelemetry trace/span viewer for development",
+  "main": "./out/main/index.js",
+  "scripts": {
+    "dev": "electron-vite dev",
+    "build": "electron-vite build",
+    "preview": "electron-vite preview",
+    "package": "electron-vite build && npx electron-builder --config.win.signAndEditExecutable=false"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "build": {
+    "appId": "com.softo.otel-viewer",
+    "productName": "Softo OTEL Viewer",
+    "win": {
+      "target": "portable",
+      "artifactName": "SoftoOtelViewer.${ext}"
+    },
+    "files": [
+      "out/**/*",
+      "proto/**/*"
+    ],
+    "directories": {
+      "output": "dist"
+    }
+  },
+  "type": "commonjs",
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.2.1",
+    "@types/node": "^25.3.3",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^5.1.4",
+    "autoprefixer": "^10.4.27",
+    "electron": "^40.7.0",
+    "electron-builder": "^25.1.8",
+    "electron-vite": "^5.0.0",
+    "postcss": "^8.5.8",
+    "tailwindcss": "^4.2.1",
+    "typescript": "^5.9.3",
+    "vite": "^7.3.1"
+  },
+  "dependencies": {
+    "@grpc/grpc-js": "^1.14.3",
+    "@grpc/proto-loader": "^0.8.0",
+    "protobufjs": "^8.0.0",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "zustand": "^5.0.11"
+  }
+}

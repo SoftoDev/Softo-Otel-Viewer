@@ -1,0 +1,17 @@
+appId: com.softo.otel-viewer
+productName: Softo OTEL Viewer
+directories:
+  buildResources: resources
+  output: dist
+files:
+  - out/**/*
+  - "!out/renderer/**"
+extraResources:
+  - from: proto
+    to: proto
+win:
+  target: portable
+mac:
+  target: dmg
+linux:
+  target: AppImage
