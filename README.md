@@ -2,6 +2,8 @@
 
 A local desktop application for viewing OpenTelemetry traces and spans during development. Built with Electron, React, and TypeScript.
 
+> **Note:** This tool is designed for local debugging and development only. It is not intended for production use.
+
 ![Softo OTEL Viewer](resources/screenshot.png)
 
 ## Features
